@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dm0wplsqvqasd"]
+
+[ext_resource type="Script" path="res://scenes/arbol_binario.gd" id="1_qfluu"]
+
+[node name="Arbol_Binario" type="Node2D"]
+script = ExtResource("1_qfluu")

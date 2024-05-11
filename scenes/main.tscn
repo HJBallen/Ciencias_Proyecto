@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://cng6ob8g1p3qb"]
+
+[ext_resource type="PackedScene" uid="uid://dqyhv4jdfx0r3" path="res://scenes/nodo.tscn" id="1_744k8"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Nodo" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(405, 142)
+
+[node name="Button" type="Button" parent="."]
+offset_left = 1093.0
+offset_top = 33.0
+offset_right = 1121.0
+offset_bottom = 64.0
+text = "+"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 451.0
+offset_top = 15.0
+offset_right = 747.0
+offset_bottom = 75.0
+theme_override_font_sizes/font_size = 35
+text = "Proyecto Ciencias"
