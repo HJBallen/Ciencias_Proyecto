@@ -1,17 +1,22 @@
-[gd_scene load_steps=2 format=3 uid="uid://cng6ob8g1p3qb"]
+[gd_scene load_steps=6 format=3 uid="uid://cng6ob8g1p3qb"]
 
 [ext_resource type="PackedScene" uid="uid://dqyhv4jdfx0r3" path="res://scenes/nodo.tscn" id="1_744k8"]
+[ext_resource type="Script" path="res://scenes/main.gd" id="1_kwohr"]
+[ext_resource type="Script" path="res://scenes/sort_node.gd" id="3_uki4a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xr803"]
+
+[sub_resource type="Theme" id="Theme_j3ier"]
 
 [node name="Main" type="Node2D"]
-
-[node name="Nodo" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(405, 142)
+script = ExtResource("1_kwohr")
 
 [node name="Button" type="Button" parent="."]
-offset_left = 1093.0
+offset_left = 1073.0
 offset_top = 33.0
 offset_right = 1121.0
-offset_bottom = 64.0
+offset_bottom = 75.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_xr803")
 text = "+"
 
 [node name="Label" type="Label" parent="."]
@@ -21,3 +26,167 @@ offset_right = 747.0
 offset_bottom = 75.0
 theme_override_font_sizes/font_size = 35
 text = "Proyecto Ciencias"
+
+[node name="Nodo2" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(98, 244)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo4" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(356, 280)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo5" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(316, 280)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo6" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(178, 244)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo7" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(258, 244)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo8" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(116, 280)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo9" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(76, 280)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo10" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(156, 280)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo11" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(196, 280)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo12" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(236, 280)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo13" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(276, 280)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo14" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(335, 244)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo17" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(138, 209)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo19" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(298, 209)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo24" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(221, 172)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo36" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(368, 109)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo37" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(676, 280)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo38" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(636, 280)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo39" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(436, 280)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo40" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(396, 280)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo41" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(476, 280)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo42" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(516, 280)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo43" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(556, 280)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo44" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(596, 280)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo45" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(422, 244)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo47" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(502, 244)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo50" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(654, 244)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo51" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(579, 244)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo52" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(461, 209)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo57" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(617, 209)
+script = ExtResource("3_uki4a")
+
+[node name="Nodo60" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(537, 172)
+script = ExtResource("3_uki4a")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_left = 921.0
+offset_top = 75.0
+offset_right = 1032.0
+offset_bottom = 214.0
+theme = SubResource("Theme_j3ier")
+columns = 8
+
+[node name="Label2" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "1"
+
+[node name="Label3" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "1"
+
+[node name="Label4" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "1"
+
+[node name="Label5" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "1"
+
+[node name="Label6" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "1"
+
+[node name="Label7" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "1"
+
+[node name="Label8" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "1"
+
+[node name="Label9" type="Label" parent="GridContainer"]
+layout_mode = 2
+text = "1"
