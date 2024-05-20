@@ -2,22 +2,23 @@
 
 [ext_resource type="PackedScene" uid="uid://dqyhv4jdfx0r3" path="res://scenes/nodo.tscn" id="1_744k8"]
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_kwohr"]
-[ext_resource type="Script" path="res://scenes/sort_node.gd" id="3_uki4a"]
+[ext_resource type="Texture2D" uid="uid://cnvw7ld46c7wt" path="res://fondo.png" id="4_peqtc"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xr803"]
 
-[sub_resource type="Theme" id="Theme_j3ier"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yky1h"]
+texture = ExtResource("4_peqtc")
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_kwohr")
 
-[node name="Button" type="Button" parent="."]
-offset_left = 1073.0
-offset_top = 33.0
-offset_right = 1121.0
-offset_bottom = 75.0
+[node name="Agregar" type="Button" parent="."]
+offset_left = 1383.0
+offset_top = 416.0
+offset_right = 1484.0
+offset_bottom = 454.0
 theme_override_styles/focus = SubResource("StyleBoxEmpty_xr803")
-text = "+"
+text = "Añadir Dato"
 
 [node name="Label" type="Label" parent="."]
 offset_left = 451.0
@@ -27,166 +28,556 @@ offset_bottom = 75.0
 theme_override_font_sizes/font_size = 35
 text = "Proyecto Ciencias"
 
-[node name="Nodo2" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(98, 244)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo4" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(356, 280)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo5" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(316, 280)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo6" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(178, 244)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo7" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(258, 244)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo8" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(116, 280)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo9" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(76, 280)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo10" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(156, 280)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo11" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(196, 280)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo12" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(236, 280)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo13" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(276, 280)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo14" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(335, 244)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo17" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(138, 209)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo19" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(298, 209)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo24" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(221, 172)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo36" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(368, 109)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo37" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(676, 280)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo38" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(636, 280)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo39" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(436, 280)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo40" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(396, 280)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo41" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(476, 280)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo42" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(516, 280)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo43" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(556, 280)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo44" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(596, 280)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo45" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(422, 244)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo47" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(502, 244)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo50" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(654, 244)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo51" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(579, 244)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo52" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(461, 209)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo57" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(617, 209)
-script = ExtResource("3_uki4a")
-
-[node name="Nodo60" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(537, 172)
-script = ExtResource("3_uki4a")
+[node name="raiz" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(650, 180)
 
 [node name="GridContainer" type="GridContainer" parent="."]
-offset_left = 921.0
-offset_top = 75.0
-offset_right = 1032.0
-offset_bottom = 214.0
-theme = SubResource("Theme_j3ier")
+offset_left = 1228.0
+offset_top = 65.0
+offset_right = 1512.0
+offset_bottom = 349.0
 columns = 8
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Label2" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
 text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Label3" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
 text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Label4" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
 text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Label5" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
 text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Label6" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
 text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Label7" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
 text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Label8" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
 text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Label9" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
 layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
 text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label10" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label11" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label12" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label13" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label14" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label15" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label16" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label17" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label18" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label19" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label20" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label21" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label22" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label23" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label24" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label25" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label26" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label27" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label28" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label29" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label30" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label31" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label32" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label33" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label34" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label35" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label36" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label37" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label38" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label39" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label40" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label41" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label42" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label43" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label44" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label45" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label46" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label47" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label48" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label49" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label50" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label51" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label52" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label53" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label54" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label55" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label56" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label57" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label58" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label59" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label60" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label61" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label62" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label63" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label64" type="Label" parent="GridContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_yky1h")
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Eliminar" type="Button" parent="."]
+offset_left = 1384.0
+offset_top = 468.0
+offset_right = 1511.0
+offset_bottom = 507.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_xr803")
+text = "Eliminar Dato"
+
+[node name="Dato" type="TextEdit" parent="."]
+offset_left = 1240.0
+offset_top = 419.0
+offset_right = 1351.0
+offset_bottom = 453.0
+placeholder_text = "Dato..."
+context_menu_enabled = false
+wrap_mode = 1
+scroll_smooth = true
+
+[node name="Dato_E" type="TextEdit" parent="."]
+offset_left = 1240.0
+offset_top = 472.0
+offset_right = 1352.0
+offset_bottom = 506.0
+placeholder_text = "Dato..."
+context_menu_enabled = false
+wrap_mode = 1
+scroll_smooth = true
+
+[connection signal="pressed" from="Agregar" to="." method="_on_agregar_pressed"]
+[connection signal="pressed" from="Eliminar" to="." method="_on_eliminar_pressed"]

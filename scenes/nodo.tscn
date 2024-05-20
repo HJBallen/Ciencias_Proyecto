@@ -1,20 +1,28 @@
 [gd_scene load_steps=3 format=3 uid="uid://dqyhv4jdfx0r3"]
 
-[ext_resource type="Script" path="res://scenes/nodo.gd" id="1_ixfpo"]
 [ext_resource type="Texture2D" uid="uid://c55nku0bg4o1p" path="res://ball.png" id="1_s1aku"]
 
-[node name="Nodo" type="Node2D"]
-scale = Vector2(1.5, 1.5)
-script = ExtResource("1_ixfpo")
+[sub_resource type="CircleShape2D" id="CircleShape2D_vpov6"]
+radius = 22.0227
+
+[node name="Nodo" type="Area2D" groups=["nodo"]]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(2, 2)
 texture = ExtResource("1_s1aku")
 
-[node name="Label" type="Label" parent="."]
-offset_left = -11.0
-offset_top = -11.5
-offset_right = 11.0
-offset_bottom = 11.5
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_vpov6")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+offset_left = -21.0
+offset_top = -20.0
+offset_right = 19.0
+offset_bottom = 20.0
+
+[node name="Label" type="Label" parent="CenterContainer"]
+layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "1"
+text = "123"
 horizontal_alignment = 1
+vertical_alignment = 1

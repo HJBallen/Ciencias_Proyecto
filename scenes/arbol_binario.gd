@@ -1,6 +1,6 @@
-extends Node2D
+extends Node
 
-var root : Object
+var root
 
 func addNodeAr(padre, hijo, isLeft):
 	hijo.setParent(padre)

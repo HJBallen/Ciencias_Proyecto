@@ -2,17 +2,17 @@ extends  'arbol_binario.gd'
 
 var data
 var peso
-var left
-var right
+var left = null
+var right = null
 var padre
 
-func buscar(data):
+func buscar(dato):
 	var node
-	if self.data == data:
+	if self.data == dato:
 		return self
-	node = left.search(data)
+	node = left.search(dato)
 	if node == null:
-		node.right.search(data)
+		node.right.search(dato)
 	return node
 
 func inorder():
@@ -30,19 +30,23 @@ func sucesor():
 func getData():
 	return data
 
-func setData(data):
-	self.data = data
+func setData(dato):
+	self.data = dato
 
 func getLeft():
 	return left
 
 func setLeft(nodo):
+	if nodo !=null:
+		nodo.setPadre(self)
 	self.left = nodo
 
 func getRight():
 	return right
 
 func setRight(nodo):
+	if nodo !=null:
+		nodo.setPadre(self)
 	self.right = nodo
 
 func getPeso():
@@ -51,5 +55,5 @@ func getPeso():
 func getPadre():
 	return padre
 
-func setPadre(padre):
-	self.padre = padre
+func setPadre(parent):
+	self.padre = parent
