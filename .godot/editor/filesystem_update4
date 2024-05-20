@@ -1,0 +1,4 @@
+res://scenes/main.tscn
+res://scenes/nodo.tscn
+res://scenes/nodo.gd
+res://scenes/sort_node.gd
