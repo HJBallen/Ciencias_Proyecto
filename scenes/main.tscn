@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://cng6ob8g1p3qb"]
+[gd_scene load_steps=6 format=3 uid="uid://cng6ob8g1p3qb"]
 
 [ext_resource type="PackedScene" uid="uid://dqyhv4jdfx0r3" path="res://scenes/nodo.tscn" id="1_744k8"]
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_kwohr"]
-[ext_resource type="Script" path="res://scenes/nodo_gui.gd" id="3_dr2d2"]
 [ext_resource type="Texture2D" uid="uid://cnvw7ld46c7wt" path="res://fondo.png" id="4_peqtc"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xr803"]
@@ -31,7 +30,6 @@ text = "Proyecto Ciencias"
 
 [node name="raiz" parent="." instance=ExtResource("1_744k8")]
 position = Vector2(650, 180)
-script = ExtResource("3_dr2d2")
 
 [node name="GridContainer" type="GridContainer" parent="."]
 offset_left = 1228.0

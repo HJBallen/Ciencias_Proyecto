@@ -15,7 +15,8 @@ func _ready():
 		i.text=""
 
 func _process(delta):
-	#llenarMemoria()
+	comprobarArbol()
+	llenarMemoria()
 	$Agregar.disabled = desactivar_agregar
 	$Eliminar.disabled = desactivar_eliminar
 
@@ -25,9 +26,6 @@ func agregarDato(dato):
 	arbol.addNode(newNode)
 	if arbol.getPadre()!=null:
 		print(arbol.getPadre().getData())
-	if(arbol.calcularNivel() == 5):
-		desactivar_agregar = true
-	llenarMemoria()
 func llenarMemoria():
 	var arreglo = []
 	if arbol.getData() != null:
@@ -61,3 +59,8 @@ func _on_eliminar_pressed():
 	else:
 		desactivar_agregar = false
 	pass # Replace with function body.
+
+func comprobarArbol():
+	for nodo in arbol.to_array():
+		if nodo !=null:
+			nodo.estaBalanceado()

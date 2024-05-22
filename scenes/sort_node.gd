@@ -9,14 +9,6 @@ func _init(dato):
 	else:
 		self.setRoot(null)
 
-func calcularNivel():
-	var nivel :=0
-	if alturaIzquierda() > alturaDerecha():
-		nivel = alturaIzquierda()
-	else:
-		nivel = alturaDerecha()
-	return nivel
-
 func addNode(nodo):
 	if(self.getData()==null):
 		self.setData(nodo.getData())
@@ -34,7 +26,6 @@ func addNode(nodo):
 		else:
 			nodo.setPadre(self)
 			setRight(nodo)
-	estaBalanceado()
 
 func deleteNode(nodo):
 	var suc
@@ -52,9 +43,8 @@ func deleteNode(nodo):
 			nodo.getPadre().setLeft(nodo.getLeft())
 		elif (nodo.getPadre().getRight() == nodo):
 			nodo.getPadre().setRight(nodo.getLeft())
-		estaBalanceado()
 		return null
-	estaBalanceado()
+
 
 func buscar(dato):
 	if(self.getData() == dato):
@@ -64,24 +54,32 @@ func buscar(dato):
 	else:
 		return self.getRight().buscar(dato);
 
-func alturaIzquierda():
-	var altura
-	if(self.getLeft()!=null):
-		altura = 1+self.getLeft().alturaIzquierda()
+func altura():
+	var alt
+	if(self.getLeft()!=null and self.getRight() !=null):
+		alt = 1 + max(self.getLeft().altura(),self.getRight().altura())
+	elif self.getLeft() != null:
+		alt= 1+self.getLeft().altura()
+	elif self.getRight() != null:
+		alt= 1+self.getRight().altura()
 	else:
-		altura = 0
-	return altura
+		alt = 1
+	return alt
 
-func alturaDerecha():
-	var altura
-	if(self.getRight()!=null):
-		altura = 1+self.getRight().alturaDerecha()
+func alturaIzq():
+	if self.getLeft() == null:
+		return 0
 	else:
-		altura = 0
-	return altura
+		return self.getLeft().altura()
+
+func alturaDer():
+	if(self.getRight()==null):
+		return 0
+	else:
+		return self.getRight().altura()
 
 func calcularPeso():
-	self.peso =  self.alturaDerecha()-self.alturaIzquierda()
+	self.peso = self.alturaDer() - self.alturaIzq()
 	return self.getPeso()
 
 func rotacionIzquierda(nodo):
@@ -126,7 +124,6 @@ func rotacionIzquierda(nodo):
 		if left != null:
 			left.setPadre(suc)
 		nodo.getRoot().setData(nodo.getData())
-	suc.getPadre().estaBalanceado()
 	return null
 
 func rotacionDerecha(nodo):
@@ -169,7 +166,7 @@ func rotacionDerecha(nodo):
 	return null
 
 func estaBalanceado():
-	if(self.calcularPeso() >= 1 or self.calcularPeso() <= -1):
+	if(self.calcularPeso() ==2 or self.calcularPeso() == -2):
 		balancear()
 	else:
 		return null
@@ -200,18 +197,6 @@ func balancear():
 					rotacionDerecha(self)
 			if(self.getRight() == null):
 				return null
-			return null
-		1:
-			match self.getRight().calcularPeso():
-				-1:
-					rotacionDerecha(self.getRight())
-			return null
-		0:
-			return null
-		-1:
-			match self.getLeft().calcularPeso():
-				1:
-					rotacionIzquierda(self.getLeft())
 			return null
 
 func to_array() -> Array:

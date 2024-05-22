@@ -5,10 +5,7 @@ extends Area2D
 var hijo_izq:=false
 var hijo_der:=false
 
-func _process(delta):
-	var bodies = get_overlapping_areas()
-	if bodies>0 :
-		moverSubArbol()
+
 		
 func moverSubArbol():
 	if (hijo_izq):
