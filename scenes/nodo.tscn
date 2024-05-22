@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://dqyhv4jdfx0r3"]
+[gd_scene load_steps=4 format=3 uid="uid://dqyhv4jdfx0r3"]
 
+[ext_resource type="Script" path="res://scenes/nodo_gui.gd" id="1_qny1j"]
 [ext_resource type="Texture2D" uid="uid://c55nku0bg4o1p" path="res://ball.png" id="1_s1aku"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_vpov6"]
 radius = 22.0227
 
 [node name="Nodo" type="Area2D" groups=["nodo"]]
+script = ExtResource("1_qny1j")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(2, 2)

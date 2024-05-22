@@ -5,6 +5,7 @@ var nivel := 0
 
 @onready var arbol = preload("res://scenes/sort_node.gd").new(null)
 @onready var memoria = $GridContainer.get_children()
+@onready var raiz = $raiz
 
 var desactivar_agregar = false
 var desactivar_eliminar = false
@@ -40,6 +41,12 @@ func llenarMemoria():
 				memoria[contador].text =""
 			contador+=1
 	print(arreglo)
+
+func dibujarArbol():
+	var posicion_anterior = raiz.global_position
+	var nodos = arbol.to_array()
+	if nodos[0] !=null:
+		raiz.label = nodos[0].getData()
 
 func _on_agregar_pressed():
 	var dato = $Dato.text
