@@ -29,7 +29,7 @@ theme_override_font_sizes/font_size = 35
 text = "Proyecto Ciencias"
 
 [node name="raiz" parent="." instance=ExtResource("1_744k8")]
-position = Vector2(650, 180)
+position = Vector2(569, 134)
 
 [node name="GridContainer" type="GridContainer" parent="."]
 offset_left = 1228.0
@@ -578,6 +578,248 @@ placeholder_text = "Dato..."
 context_menu_enabled = false
 wrap_mode = 1
 scroll_smooth = true
+
+[node name="Nodo3" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(281, 254)
+
+[node name="Nodo4" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(857, 249)
+
+[node name="Nodo5" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(152, 342)
+
+[node name="Nodo6" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(432, 347)
+
+[node name="Nodo7" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(710, 351)
+
+[node name="Nodo8" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(983, 348)
+
+[node name="Nodo9" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(76, 438)
+scale = Vector2(0.9, 0.9)
+
+[node name="Nodo10" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(219, 438)
+scale = Vector2(0.9, 0.9)
+
+[node name="Nodo11" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(361, 438)
+scale = Vector2(0.9, 0.9)
+
+[node name="Nodo12" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(503, 438)
+scale = Vector2(0.9, 0.9)
+
+[node name="Nodo13" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(641, 438)
+scale = Vector2(0.9, 0.9)
+
+[node name="Nodo14" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(779, 438)
+scale = Vector2(0.9, 0.9)
+
+[node name="Nodo15" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(919, 438)
+scale = Vector2(0.9, 0.9)
+
+[node name="Nodo16" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(1061, 438)
+scale = Vector2(0.9, 0.9)
+
+[node name="Nodo17" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(42, 507)
+scale = Vector2(0.8, 0.8)
+
+[node name="Nodo18" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(111, 507)
+scale = Vector2(0.8, 0.8)
+
+[node name="Nodo19" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(181, 507)
+scale = Vector2(0.8, 0.8)
+
+[node name="Nodo20" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(253, 507)
+scale = Vector2(0.8, 0.8)
+
+[node name="Nodo21" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(326, 507)
+scale = Vector2(0.8, 0.8)
+
+[node name="Nodo22" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(394, 507)
+scale = Vector2(0.8, 0.8)
+
+[node name="Nodo23" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(465, 507)
+scale = Vector2(0.8, 0.8)
+
+[node name="Nodo24" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(534, 507)
+scale = Vector2(0.8, 0.8)
+
+[node name="Nodo25" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(606, 507)
+scale = Vector2(0.8, 0.8)
+
+[node name="Nodo26" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(675, 507)
+scale = Vector2(0.8, 0.8)
+
+[node name="Nodo27" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(745, 507)
+scale = Vector2(0.8, 0.8)
+
+[node name="Nodo28" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(813, 507)
+scale = Vector2(0.8, 0.8)
+
+[node name="Nodo29" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(885, 507)
+scale = Vector2(0.8, 0.8)
+
+[node name="Nodo30" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(955, 507)
+scale = Vector2(0.8, 0.8)
+
+[node name="Nodo31" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(1025, 507)
+scale = Vector2(0.8, 0.8)
+
+[node name="Nodo32" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(1096, 507)
+scale = Vector2(0.8, 0.8)
+
+[node name="Nodo33" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(23, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo34" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(58, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo35" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(94, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo36" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(130, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo37" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(165, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo38" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(201, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo39" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(237, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo40" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(273, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo41" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(309, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo42" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(344, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo43" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(379, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo44" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(413, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo45" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(447, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo46" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(482, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo47" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(517, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo48" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(552, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo49" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(587, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo50" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(622, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo51" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(657, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo52" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(692, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo53" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(727, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo54" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(762, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo55" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(797, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo56" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(832, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo57" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(867, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo58" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(903, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo59" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(938, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo60" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(974, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo61" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(1010, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo62" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(1045, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo63" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(1079, 573)
+scale = Vector2(0.7, 0.7)
+
+[node name="Nodo64" parent="." instance=ExtResource("1_744k8")]
+position = Vector2(1113, 573)
+scale = Vector2(0.7, 0.7)
 
 [connection signal="pressed" from="Agregar" to="." method="_on_agregar_pressed"]
 [connection signal="pressed" from="Eliminar" to="." method="_on_eliminar_pressed"]

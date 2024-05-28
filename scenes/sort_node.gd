@@ -26,12 +26,13 @@ func addNode(nodo):
 		else:
 			nodo.setPadre(self)
 			setRight(nodo)
+	self.estaBalanceado()
 
 func deleteNode(nodo):
 	var suc
 	if(nodo.getRight()!=null):
 		suc = (nodo.getRight()).sucesor()
-		if(!suc.getPadre() == nodo):
+		if(suc.getPadre() != nodo):
 			suc.getPadre().setLeft(suc.getRight())
 		else:
 			nodo.setRight(suc.getRight())
@@ -43,7 +44,9 @@ func deleteNode(nodo):
 			nodo.getPadre().setLeft(nodo.getLeft())
 		elif (nodo.getPadre().getRight() == nodo):
 			nodo.getPadre().setRight(nodo.getLeft())
+		nodo.getPadre().estaBalanceado()
 		return null
+	nodo.estaBalanceado()
 
 
 func buscar(dato):
@@ -161,8 +164,6 @@ func rotacionDerecha(nodo):
 		if right != null:
 			right.setPadre(suc)
 		nodo.getRoot().setData(nodo.getData())
-	suc.getPadre().estaBalanceado()
-	
 	return null
 
 func estaBalanceado():
@@ -179,7 +180,7 @@ func balancear():
 				1:
 					rotacionIzquierda(self)
 				-1:
-					rotacionDerecha(self)
+					rotacionDerecha(self.getRight())
 					rotacionIzquierda(self)
 				0:
 					rotacionIzquierda(self)
@@ -189,7 +190,7 @@ func balancear():
 		-2:
 			match self.getLeft().calcularPeso():
 				1:
-					rotacionIzquierda(self)
+					rotacionIzquierda(self.getLeft())
 					rotacionDerecha(self)
 				-1:
 					rotacionDerecha(self)
